@@ -1,0 +1,15 @@
+<div class="header" *ngIf="email">
+    <div>
+        <h3>{{email.subject}}</h3>
+    </div>
+    <div>
+        From: {{email.from}}
+    </div>
+    <div>
+        To: {{email.to}}
+    </div>
+</div>
+<div class="ui divider"></div>
+<div [innerHTML]="email.html">
+    <!-- {{email.html}} -->
+</div>
