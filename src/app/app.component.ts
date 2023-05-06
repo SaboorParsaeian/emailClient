@@ -10,7 +10,6 @@ import { AuthService } from './auth/auth.service';
 export class AppComponent{
   // signedin = false;
   signedin$ = new BehaviorSubject<boolean>(false);
-
   constructor(private authService: AuthService){
     this.signedin$ = this.authService.signedin$
   }
